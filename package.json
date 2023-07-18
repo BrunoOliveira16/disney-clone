@@ -1,0 +1,17 @@
+{
+  "name": "disney-clone",
+  "version": "1.0.0",
+  "description": "projeto clone da página do disney+",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bruno Oliveira",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.63.6"
+  }
+}
