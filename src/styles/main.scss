@@ -1,0 +1,45 @@
+@use './configs/variables.scss';
+@use './configs/mixins.scss';
+@use './configs/fonts.scss';
+@use 'hero';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: variables.$bg-primary-color;
+    font-family: Avenir, sans-serif;
+}
+
+.text--big {
+    @include mixins.text(1.125rem); //18px
+}
+
+.text {
+    @include mixins.text; //16px
+}
+
+.text--small {
+    @include mixins.text(.75rem); // 12px
+}
+
+.link-text {
+    @include mixins.text(1.125rem);
+    color: variables.$text-second-color;
+    text-decoration: underline;
+}
+
+.title--big {
+    @include mixins.title(2.75rem); //44px
+}
+
+.title {
+    @include mixins.title; //40px
+}
+
+.title--small {
+    @include mixins.title(1.75rem); //28px
+}
