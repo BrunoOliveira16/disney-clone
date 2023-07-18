@@ -4,6 +4,7 @@
   "description": "projeto clone da página do disney+",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp watch",
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
