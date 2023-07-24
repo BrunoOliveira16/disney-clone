@@ -22,14 +22,26 @@ body {
 
 .text--big {
     @include mixins.text(1.125rem); //18px
+    
+    @media(max-width: 768px) {
+        @include mixins.text(.9375rem); //15px
+    }
 }
 
 .text {
     @include mixins.text; //16px
+
+    @media(max-width: 768px) {
+        @include mixins.text(.875rem); //14px
+    }
 }
 
 .text--small {
     @include mixins.text(.75rem); // 12px
+
+    @media(max-width: 768px) {
+        @include mixins.text(.6875rem); //11px
+    }
 }
 
 .link-text {
@@ -40,14 +52,26 @@ body {
 
 .title--big {
     @include mixins.title(2.75rem); //44px
+
+    @media(max-width: 768px) {
+        @include mixins.title(1.625rem); //26px
+    }
 }
 
 .title {
     @include mixins.title; //40px
+
+    @media(max-width: 768px) {
+        @include mixins.title(1.5rem); //24px
+    }
 }
 
 .title--small {
     @include mixins.title(1.75rem); //28px
+
+    @media(max-width: 768px) {
+        @include mixins.title(1.375rem); //22px
+    }
 }
 
 .button {
@@ -97,6 +121,10 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
+    @media(max-width: 768px) {
+        display: block;
+    }
+
     img {
         max-width: 100%;
     }
@@ -126,6 +154,12 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media(max-width: 768px) {
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
         }
     }
 }
