@@ -7,6 +7,10 @@
 
 <br>
 
+<img src="./assets/screenshot-02.jpg" alt="screenshot do projeto">
+
+<br>
+
 ## 🛠️ Como executar o projeto
 Para executar este projeto localmente em sua máquina, siga estas etapas:
 
